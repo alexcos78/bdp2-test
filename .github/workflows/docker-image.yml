@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag alexcos78/webserver
     - name: Push the image to DockerHub
-      run: docker login -u alexcos78 -p ${{ secrets.DOCKER_TOKEN }} && docker push alexcos78/reb_server
+      run: docker login -u alexcos78 -p ${{ secrets.DOCKER_TOKEN }} && docker push alexcos78/web_server
 
